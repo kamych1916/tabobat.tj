@@ -1,6 +1,6 @@
 
 <template>
-  <header class="has-shadow headroom headroom--not-bottom headroom--pinned headroom--top">
+  <header  class="has-shadow headroom headroom--not-bottom headroom--pinned headroom--top">
     <div class="inner wide vertical">
       <div class="justify">
         <div class="left-side">
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div id="login-form">
-            <a class="login login-init" data-redirect="/">Войти</a>
+            <nuxt-link class="login login-init" to="/auth">Войти</nuxt-link>
           </div>
         </div>
       </div>
@@ -61,21 +61,6 @@
 </template>
 
 <style>
-@font-face {
-  font-family: 'CirceRounded';
-  src: url('~static/fonts/CirceRounded-Regular.woff2') format('woff2'),
-    url('~static/fonts/CirceRounded-Regular.woff') format('woff'),
-    url('~static/fonts/CirceRounded-Regular.ttf') format('truetype');
-}
-body {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  padding-top: 80px !important;
-  color: #000000;
-  font-family: 'CirceRounded';
-  font-weight: bold;
-}
 header {
   background: #ffffff;
   width: 100%;
