@@ -105,7 +105,7 @@ export default {}
 }
 .service-block{
   display: flex;
-  justify-content: center;
+  /* flex-direction: column; */
   margin-top:20px
 }
 
@@ -160,6 +160,8 @@ export default {}
 }
 
 .doctors-online-container{
+  display: flex;
+  flex-direction: column;
   padding-left: 52px;
 }
 
